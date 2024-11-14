@@ -1,0 +1,42 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://root:w5pbhhmg@test-db-mysql.ns-ubx9d72z.svc:3306/streaming?useSSL=false&serverTimezone=UTC
+    username: root
+    password: w5pbhhmg
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.streaming.model
+  configuration:
+    map-underscore-to-camel-case: true
+
+jwt:
+  secret: your-secret-key
+  expiration: 86400 # 24小时
+
+file:
+  upload-dir: ./uploads
+
+# SpringDoc配置
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
+  packages-to-scan: com.streaming.controller
+  paths-to-match: /api/**
+
+logging:
+  level:
+    com.streaming: DEBUG 
