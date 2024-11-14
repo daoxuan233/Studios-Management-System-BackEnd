@@ -3,7 +3,8 @@
 基于Spring Boot的流媒体播放管理系统后端服务，提供视频上传、播放、评论等功能。
 
 ## 技术栈
-
+![example](https://img.shields.io/badge/SpringBoot-2.7.0-grunt.svg)
+![example](https://img.shields.io/badge/MySQL-8.0-grunt.svg)
 - Spring Boot 2.7.0
 - Spring Security + JWT认证
 - MyBatis
