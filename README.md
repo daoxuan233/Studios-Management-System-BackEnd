@@ -4,7 +4,6 @@
 本项目是一个基于Spring Boot的流媒体播放管理系统后端服务，旨在为用户提供便捷的视频上传、播放以及丰富的互动功能，如评论、点赞等，同时确保系统的安全性和高效性。
 
 ## 二、技术栈
-## 技术栈
 ![example](https://img.shields.io/badge/SpringBoot-2.7.0-grunt.svg)
 ![example](https://img.shields.io/badge/MySQL-8.0-grunt.svg)
 - **Spring Boot 2.7.0**：作为项目的核心框架，提供了快速搭建项目、简化配置、内置容器等诸多便利，大大提高了开发效率。
@@ -40,7 +39,7 @@
     - 安装并启动MySQL 8.0数据库，创建相应的数据库和表结构（可参考项目中的数据库初始化脚本）。
     - （可选）安装Docker和Docker Compose（如果需要进行容器化部署）。
 2. **项目安装与运行**
-    - 克隆项目代码到本地：`git clone [项目仓库地址]`。
+    - 克隆项目代码到本地：`git clone https://github.com/daoxuan233/Studios-Management-System-BackEnd.git`。
     - 进入项目目录：`cd Studios-Management-System-BackEnd`。
     - 使用Maven构建项目：`mvn clean install`。
     - 运行项目：可以通过在IDE中运行主类（通常是包含main方法的类）启动项目，或者使用Maven命令`mvn spring-boot:run`启动。项目启动后，默认监听在本地的某个端口（如8080），可通过浏览器或其他工具访问接口进行测试（如`http://localhost:8080/api-docs`可查看接口文档）。
